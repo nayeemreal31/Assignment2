@@ -1,0 +1,331 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="8dp"
+    android:background="@color/white"
+
+    >
+
+<!--Jursey selecting -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select your favourite team jursey"
+        android:textSize="22sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        />
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="8dp">
+
+
+
+                <CheckBox
+                    android:id="@+id/cb_realmadrid"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Real Madrid"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"
+                    android:paddingEnd="8dp" />
+
+
+
+
+
+                <CheckBox
+                    android:id="@+id/cb_manu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ManU"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"
+                    android:paddingEnd="4dp" />
+
+
+
+
+                <CheckBox
+                    android:id="@+id/cb_chelsea"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Chelsea"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"
+                    android:paddingEnd="8dp" />
+
+
+            </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_clubresult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="#6B1111"
+        android:textSize="12sp"
+        />
+                <Button
+                    android:id="@+id/btn_show"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="show"
+                    android:layout_marginTop="8dp"
+                    android:textColor="@color/white"
+                    android:backgroundTint="#C82517"
+                    android:textStyle="bold"/>
+
+
+
+
+
+
+
+
+
+
+    <!-- jursey's size selecting -->
+
+
+
+    <TextView
+        android:id="@+id/tv_re"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="18sp"
+        android:textAllCaps="true">
+
+    </TextView>
+
+
+    <TextView
+        android:id="@+id/clubs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select jursey size"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        >
+    </TextView>
+
+
+    <RadioGroup
+        android:id="@+id/rg_sizeselect"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+        >
+
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="M"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:layout_marginRight="6dp"
+                    >
+
+                </RadioButton>
+
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:text="L">
+                </RadioButton>
+
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:text="S">
+
+                </RadioButton>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:text="XL">
+        </RadioButton>
+
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:text="XXL">
+
+        </RadioButton>
+            </RadioGroup>
+
+    <TextView
+        android:id="@+id/tv_size"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+android:text=""
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        android:layout_marginBottom="12dp"
+
+/>
+
+    <Button
+        android:id="@+id/btn_showsize"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+android:text="Show Size"
+        android:textSize="12sp"
+        android:textColor="@color/white"
+        android:backgroundTint="#D71A5A"
+        android:layout_marginBottom="12dp"/>
+
+
+
+
+
+
+
+    <!-- Quantity selecting -->
+
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_increment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+"
+            android:layout_marginRight="12dp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:backgroundTint="#193E31"
+            android:textSize="22sp">
+
+        </Button>
+
+
+        <TextView
+            android:id="@+id/tv_quantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/_0"
+
+            android:textSize="20sp"
+
+            />
+        <Button
+            android:id="@+id/btn_decrement"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:backgroundTint="#0A420A"
+            android:layout_marginLeft="12dp"
+            android:textSize="22sp">
+
+        </Button>
+    </LinearLayout>
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Price (BDT 500 each)"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_marginTop="10dp"
+        />
+
+    <TextView
+        android:id="@+id/tv_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BDT 0"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:textAllCaps="true"
+        />
+
+
+
+
+
+
+    <TextView
+        android:id="@+id/tv_rating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rating"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+
+        android:textSize="24sp"
+        android:layout_gravity="center"
+
+        >
+    </TextView>
+
+    <RatingBar
+        android:id="@+id/rb_rating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:numStars="5"
+        android:rating="2"
+        android:stepSize=".5"
+        android:progressBackgroundTint="#B1033A"
+        android:progressTint="@android:color/holo_blue_bright">
+
+    </RatingBar>
+
+    <TextView
+        android:id="@+id/tv_ratingresult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:layout_gravity="center"
+        android:text=""/>
+
+  <Button
+      android:id="@+id/btn_placeorder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="place order"
+        android:textColor="@color/white"
+        android:layout_gravity="center"
+        android:backgroundTint="#D71023E0"
+        android:textStyle="bold"/>
+
+
+
+    </LinearLayout>
+
+
+
+
